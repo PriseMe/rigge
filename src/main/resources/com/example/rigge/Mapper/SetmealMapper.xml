@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.rigge.Mapper.SetmealMapper">
+
+<!--    public void updateStatus(@Param("List") List<Long> list);-->
+   <update id="updateStatus"  parameterType="java.util.List">
+      update setmeal set status = #{status} where id in
+      <foreach collection="List" item="item" index="index"
+               open="(" close=")" separator=",">
+         #{item}
+      </foreach>
+   </update>
+
+</mapper>
