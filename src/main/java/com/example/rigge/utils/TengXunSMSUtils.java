@@ -12,9 +12,6 @@ import com.tencentcloudapi.sms.v20190711.SmsClient;
 // 导入要请求接口对应的 request response 类
 import com.tencentcloudapi.sms.v20190711.models.SendSmsRequest;
 import com.tencentcloudapi.sms.v20190711.models.SendSmsResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 /**
  * Tencent Cloud Sms Sendsms
